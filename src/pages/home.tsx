@@ -8,20 +8,9 @@ const Home = (): React.ReactElement => {
     }
 
     return (
-        <div style={{ 
-            display: 'flex', 
-            height: '100vh',
-            width: '100%'
-        }}>
+        <div className="flex h-screen w-full">
             {/* Left Container */}
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: '2rem'
-            }}>
+            <div className="flex-1 flex flex-col justify-center items-center p-8">
                 <h1>
                     Thomas Walter
                 </h1>
@@ -37,21 +26,11 @@ const Home = (): React.ReactElement => {
             </div>
 
             {/* Right Container */}
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: '2rem'
-            }}>
+            <div className="flex-1 flex justify-center items-center p-8">
                 <img 
                     src="/me.JPG" 
                     alt="Home page image" 
-                    style={{
-                        maxWidth: '100%',
-                        maxHeight: '100%',
-                        objectFit: 'contain'
-                    }}
+                    className="max-w-full max-h-full object-contain"
                 />
             </div>
         </div>
