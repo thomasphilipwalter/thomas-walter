@@ -8,29 +8,41 @@ const Home = (): React.ReactElement => {
     }
 
     return (
-        <div className="flex h-screen w-full">
+        <div className="flex h-full w-full">
             {/* Left Container */}
-            <div className="flex-1 flex flex-col justify-center items-center p-8">
-                <h1>
+            <div className="flex-1 flex flex-col items-start p-8 gap-6">
+                <h1 className="text-3xl! font-bold">
                     Thomas Walter
                 </h1>
-                <button onClick={() => handleNavigation('/cs')}>
-                    CS
-                </button>
-                <button onClick={() => handleNavigation('/music')}>
-                    Music
-                </button>
-                <button onClick={() => handleNavigation('/art')}>
-                    Art
-                </button>
+                <p className="text-left">
+                    Hello! I'm Thomas, a computer science major at Yale. My coursework has spanned CS fundamentals, from algorithms and data structures to web development and database design, to other areas of interst like quantum computing, big-data system design, and computation game intelligence. Outside of CS, I'm a cellist and enjoy everything artistic! Feel free to browse below.
+                </p>
+                <div 
+                    onClick={() => handleNavigation('/cs')} 
+                    className="cursor-pointer hover:underline text-xl"
+                >
+                    CS →
+                </div>
+                <div 
+                    onClick={() => handleNavigation('/music')} 
+                    className="cursor-pointer hover:underline text-xl ml-30"
+                >
+                    Music →
+                </div>
+                <div 
+                    onClick={() => handleNavigation('/art')} 
+                    className="cursor-pointer hover:underline text-xl ml-60"
+                >
+                    Art →
+                </div>
             </div>
 
             {/* Right Container */}
-            <div className="flex-1 flex justify-center items-center p-8">
+            <div className="flex-1 flex items-start p-8">
                 <img 
                     src="/me.JPG" 
                     alt="Home page image" 
-                    className="max-w-full max-h-full object-contain"
+                    className="w-3/4 max-h-120 object-contain"
                 />
             </div>
         </div>
