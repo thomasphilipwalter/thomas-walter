@@ -1,10 +1,9 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom'
 
-function Art() {
+function Art(): React.ReactElement {
     const navigate = useNavigate();
 
-    const handleNavigation = (path) => {
+    const handleNavigation = (path: string): void => {
         navigate(path)
     }
 

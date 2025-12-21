@@ -1,17 +1,16 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom'
 
-function Music() {
+function CS(): React.ReactElement {
     const navigate = useNavigate();
 
-    const handleNavigation = (path) => {
+    const handleNavigation = (path: string): void => {
         navigate(path)
     }
 
     return (
         <div>
             <h1>
-                MUSIC
+                COMPUTER SCIENCE
             </h1>
             <button onClick={() => handleNavigation('/')}>
                 Back
@@ -21,4 +20,4 @@ function Music() {
 
 }
 
-export default Music;
+export default CS;

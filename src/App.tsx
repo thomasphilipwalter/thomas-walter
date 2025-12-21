@@ -5,8 +5,7 @@ import CS from './pages/cs';
 import Music from './pages/music';
 import Art from './pages/art';
 
-function App() {
-
+function App(): React.ReactElement {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
