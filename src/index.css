@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --font-merriweather: 'Merriweather', serif;
+  --font-code: 'Consolas', 'Monaco', monospace;
 }
 
 :root {
-  font-family: 'Merriweather', serif;
+  font-family: 'Consolas', 'Monaco', monospace;
   line-height: 1.5;
   font-weight: 400;
 
@@ -34,6 +34,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #F7EFE0;
 }
 
 h1 {
