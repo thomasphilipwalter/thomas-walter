@@ -7,7 +7,7 @@ import Art from './pages/art';
 
 function App(): React.ReactElement {
   return (
-    <div className="m-8 rounded-lg p-8 w-[90%] min-w-[1200px] mx-auto max-h-[85vh] overflow-hidden flex flex-col bg-white">
+    <div className="m-8 rounded-lg p-8 w-[90%] min-w-[1200px] h-[85vh] mx-auto overflow-y-auto flex flex-col bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cs" element={<CS />} />

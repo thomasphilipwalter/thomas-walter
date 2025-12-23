@@ -22,13 +22,13 @@ const Home = (): React.ReactElement => {
                     <a className="hover:underline" target="_blank" href="./thomas_walter.pdf">Resume</a>
                 </div>
                 <p className="text-left mt-6">
-                    Hello! I'm Thomas, a computer science major at Yale. My coursework has spanned CS fundamentals, from algos and data structures to web development and database design, to other areas of interst like quantum computing, big-data systems, and computation game intelligence. During my internships, I've spent time writing firmware at Schneider Electric, working on network communications for a high-precision servo drive. I've also worked as a software engineer at an oncology lab at the Yale School of Medicine and at a climate advisory startup in New York. Outside of CS, I'm a cellist and enjoy everything artistic! Feel free to browse below.
+                    <span className="font-bold">Hello! I'm Thomas, a computer science major at Yale.</span> My coursework has spanned CS fundamentals, from algos and data structures to web development and database design, to other areas of interest like quantum computing, big-data systems, and computation game intelligence. During my internships, I've spent time writing firmware at Schneider Electric, working on network communications for a high-precision servo drive. I've also worked as a software engineer at an oncology lab at the Yale School of Medicine and at a climate advisory startup in New York. Outside of CS, I'm a cellist and enjoy everything artistic! Feel free to browse below.
                 </p>
                 <div></div>
                 <div className="overflow-visible">
                     <div 
                         onClick={() => handleNavigation('/cs')} 
-                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-30 bg-[url('/button-bg.png')] bg-[length:100%] bg-center bg-no-repeat px-4 py-2 mt-6"
+                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-20 bg-[url('/button-bg.png')] bg-[length:100%] bg-center bg-no-repeat px-4 py-2 mt-6"
                     >
                         CS →
                     </div>
@@ -36,17 +36,17 @@ const Home = (): React.ReactElement => {
                 <div className="overflow-visible">
                     <div 
                         onClick={() => handleNavigation('/music')} 
-                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-60 bg-[url('/button-bg-2.png')] bg-[length:65%] bg-center bg-no-repeat px-4 py-2 mt-6"
+                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-60 bg-[url('/button-bg-2.png')] bg-[length:65%] bg-center bg-no-repeat px-4 py-2 mt-4"
                     >
-                        Music →
+                        MUSIC →
                     </div>
                 </div>
                 <div className="overflow-visible">
                     <div 
                         onClick={() => handleNavigation('/art')} 
-                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-90 bg-[url('/button-bg-3.png')] bg-[length:90%] bg-center bg-no-repeat px-4 py-2 mt-6"
+                        className="cursor-pointer font-bold hover:brightness-90 text-xl ml-100 bg-[url('/button-bg-3.png')] bg-[length:90%] bg-center bg-no-repeat px-4 py-2 mt-4"
                     >
-                        Art →
+                        ART →
                     </div>
                 </div>
             </div>
